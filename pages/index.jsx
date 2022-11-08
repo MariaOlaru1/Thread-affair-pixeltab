@@ -1,16 +1,15 @@
-import Image from "next/image";
+import Header from '../components/common/header/Header';
 
 export default function Home() {
   return (
     <div>
-      hello boston <i className="fa-solid fa-house"></i>
-      <img src="/images/logo.jpg" alt="Alt"></img>
+      <header className="header container mt-5">
+        <Header></Header>
+      </header>
 
-      <button className="button button-primary">Button Primary</button>
-      <button className="button button-large button-primary button-large">Button Primary Large</button>
+      <main className="content"></main>
 
-      <a className="button button-primary">Button Primary</a>
-      <a className="button button-large button-primary button-large">Button Primary Large</a>
+      <footer className="footer"></footer>
     </div>
   );
 }
